@@ -1,0 +1,15 @@
+.navBarContainer {
+  padding: 1rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--text);
+  border-radius: 50px;
+}
+
+p {
+  cursor: pointer;
+}
+
+p:hover {
+    color: var(--primary);
+}

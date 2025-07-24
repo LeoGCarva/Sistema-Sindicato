@@ -1,0 +1,34 @@
+:root {
+  --bg_light: hsl(0 0% 100%);
+  --bg: hsl(0 0% 95%);
+  --bg_dark: hsl(0 0% 90%);
+
+  --text: hsl(0 0% 5%);
+  --text_muted: hsl(0 0% 30%);
+  --text_secondary: hsl(0 0% 100%);
+  --text_secondary_muted: hsl(0 0% 90%);
+
+  --danger: hsl(0, 75%, 58%);
+  --warning: hsl(60, 60%, 60%);
+  --success: hsl(110, 45%, 62%);
+
+  --primary: hsl(199, 100%, 29%);
+  --primary_muted: hsl(199, 35%, 29%);
+
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  background-color: var(--bg);
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
