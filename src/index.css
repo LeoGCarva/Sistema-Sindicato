@@ -2,6 +2,9 @@
   --bg_light: hsl(0 0% 100%);
   --bg: hsl(0 0% 95%);
   --bg_dark: hsl(0 0% 90%);
+  --bg_darker: hsl(0 0% 80%);
+
+  --gray_100: rgba(0, 0, 0, 0.2);
 
   --text: hsl(0 0% 5%);
   --text_muted: hsl(0 0% 30%);
@@ -15,14 +18,25 @@
   --primary: hsl(199, 100%, 29%);
   --primary_muted: hsl(199, 35%, 29%);
 
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
+
   line-height: 1.5;
   font-weight: 400;
+  font-size: 1rem;
 
-  background-color: var(--bg);
+  background-color: var(--bg_dark);
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body,
+input,
+button,
+textarea {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
 }
 
 * {
@@ -30,5 +44,3 @@
   margin: 0;
   box-sizing: border-box;
 }
-
-

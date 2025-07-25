@@ -1,15 +1,60 @@
 .navBarContainer {
   padding: 1rem 4rem;
   display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid var(--text);
-  border-radius: 50px;
+  justify-content: space-evenly;
+  background-color: var(--bg);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
-p {
+.navBarli {
+  display: flex;
+  position: relative;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.dropDown li {
   cursor: pointer;
+  list-style: none;
+
+  padding: 0.5rem 1rem;
+  font-size: 600;
+  color: var(--text);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-p:hover {
+.dropDown li:last-child {
+    border-bottom: none;
+}
+
+.navBarli:hover {
+  cursor: pointer;
+  color: var(--primary);
+}
+
+.dropDown {
+  position: absolute;
+  top: 1rem;
+  padding: 1rem 0.5rem;
+  margin: 0.5rem -1rem;
+
+  background-color: var(--bg);
+  border-radius: 0.5rem;
+
+  display: none;
+
+  width: max-content;
+
+  li {
+    opacity: 0.7;
+  }
+
+  li:hover {
+    opacity: 1;
     color: var(--primary);
+  }
+}
+
+.navBarli:hover .dropDown {
+  display: block;
 }
