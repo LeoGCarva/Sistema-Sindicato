@@ -1,12 +1,14 @@
-import { Header } from './components/Header'
-import { NavBar } from './components/NavBar'
-
-import './App.css'
+import { BrowserRouter, Route, Routes as Switch } from 'react-router-dom';
+import UserRoutes from './routes/UserRoutes';
 
 export function App() {
   return (
     <> 
-    <Header />
+    <BrowserRouter >
+      <Switch>
+        <Route path='/' element={<UserRoutes />}/>
+      </Switch>
+    </BrowserRouter>
     </>
   )
 }
