@@ -5,6 +5,7 @@
   --bg_darker: hsl(0 0% 80%);
 
   --gray_100: rgba(0, 0, 0, 0.2);
+  --gray_200: rgba(0, 0, 0, 0.4);
 
   --text: hsl(0 0% 5%);
   --text_muted: hsl(0 0% 30%);

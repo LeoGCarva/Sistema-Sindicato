@@ -1,0 +1,92 @@
+.loginPageContainer {
+  height: 90svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginContentContainer {
+  padding: 4rem 5rem 3rem 5rem;
+  background-color: var(--bg_light);
+  display: grid;
+  grid-template-columns: 25rem 25rem;
+  border-radius: 20px;
+  box-shadow: 10px 10px 2px var(--gray_100);
+  border: 1px solid var(--gray_100);
+}
+
+.inputDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  .userInput,
+  .passInput {
+    position: relative;
+
+    input {
+      border-radius: 5px;
+      border: 1px solid var(--gray_100);
+      padding: 0.5rem 1rem;
+      font-size: 1.2rem;
+      width: 100%;
+    }
+
+    input:hover {
+        border-color: var(--gray_200);
+    }
+
+    input:focus {
+      outline: 1px solid var(--primary);
+    }
+  }
+
+  .passInput {
+    display: flex;
+    align-items: center;
+
+    button {
+      cursor: pointer;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      position: absolute;
+      right: 1rem;
+
+      border: none;
+      border-radius: 20px;
+      background: none;
+      width: 2rem;
+      height: 2rem;
+      color: var(--gray_200);
+    }
+
+    button:hover {
+      background-color: var(--bg);
+    }
+  }
+
+  .keepLoginSpan {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .loginBtn {
+    cursor: pointer;
+    align-self: flex-end;
+    width: fit-content;
+    padding: 1rem 3rem;
+    margin-top: 2rem;
+
+    border: 1px solid var(--primary);
+    border-radius: 50px;
+    background-color: var(--primary_muted);
+    color: var(--bg_light);
+  }
+
+  .loginBtn:hover {
+    background-color: var(--primary);
+  }
+}
