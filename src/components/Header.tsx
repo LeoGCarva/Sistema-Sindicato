@@ -3,6 +3,7 @@ import {
   LuClipboardList,
   LuCrown,
   LuMegaphone,
+  LuUser,
   LuUserPlus,
   LuUsers,
 } from "react-icons/lu";
@@ -31,11 +32,12 @@ export function Header() {
         </li>
         <li className={styles.navBarli}>
           <a aria-label="Sócios">
-            <LuUserPlus />
+            <LuUser />
           </a>
 
           <ul className={styles.dropDown}>
-            <li>Cadastro de Contribuição</li>
+            <li>Cadastro de sócios</li>
+            <li>Cadastro de contribuição</li>
             <li>Reembolso</li>
           </ul>
         </li>
