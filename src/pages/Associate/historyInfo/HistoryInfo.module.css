@@ -1,0 +1,53 @@
+.historyInfo {
+  padding: 1rem 2rem;
+  border: 1px solid var(--gray_100);
+  background: var(--bg);
+
+  h2 {
+    width: fit-content;
+    margin-top: -2.2rem;
+    padding: 0 1rem;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top: 1px solid var(--gray_100);
+    background-color: var(--bg);
+  }
+}
+
+.historyWrapper {
+  padding: 1rem 0;
+
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 10rem 10rem repeat(6, 1fr) 4rem 3rem;
+}
+
+.pauseBtn, .trashBtn {
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: var(--danger);
+}
+
+.addSpan {
+    margin-top: .5rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.addHistoryUp, .addHistoryDown {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+    padding: .5rem .7rem;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--primary_muted);
+    color: var(--bg_light);
+}
+
+.addHistoryUp:hover, .addHistoryDown:hover {
+    background-color: var(--primary);
+}

@@ -1,0 +1,33 @@
+.addressInfo {
+  padding: 1rem 2rem;
+  border: 1px solid var(--gray_100);
+  background: var(--bg);
+
+  h2 {
+    width: fit-content;
+    margin-top: -2.2rem;
+    padding: 0 1rem;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top: 1px solid var(--gray_100);
+    background-color: var(--bg);
+  }
+}
+
+.addressWrapper {
+  padding: 1rem 0;
+
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 1fr 1fr 5.1rem 1fr;
+  grid-template-areas: "1 2 3 4";
+
+  .numInput {
+    max-width: 5.1rem;
+  }
+
+  .complementInput {
+    grid-area: 2 / 3 / 2 / -1;
+  }
+}

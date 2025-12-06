@@ -4,7 +4,6 @@ import {
   LuCrown,
   LuMegaphone,
   LuUser,
-  LuUserPlus,
   LuUsers,
 } from "react-icons/lu";
 import { MdAttachMoney } from "react-icons/md";

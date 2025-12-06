@@ -4,7 +4,7 @@ import { LuEye, LuEyeClosed } from "react-icons/lu";
 import styles from "./css/Login.module.css";
 
 export function Login() {
-    const [showPass, setShowPass] = useState<boolean>(false);
+    const [showPass, setShowPass] = useState<boolean>(true);
 
   return (
     <div className={styles.loginPageContainer}>

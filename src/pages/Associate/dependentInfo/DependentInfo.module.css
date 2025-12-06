@@ -1,0 +1,56 @@
+.dependentInfo {
+  padding: 1rem 2rem;
+  border: 1px solid var(--gray_100);
+  background: var(--bg);
+
+  h2 {
+    width: fit-content;
+    margin-top: -2.2rem;
+    padding: 0 1rem;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top: 1px solid var(--gray_100);
+    background-color: var(--bg);
+  }
+}
+
+.addDependentSpan {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.addDependentBtn {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+    padding: .5rem .7rem;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--primary_muted);
+    color: var(--bg_light);
+}
+
+.addDependentBtn:hover {
+    background-color: var(--primary);
+}
+
+.dependentWrapper {
+  padding: 1rem 0;
+  display: grid;
+  align-items: center;
+  gap: 0.5rem;
+  grid-template-columns: 2fr 1fr 1fr 1fr 4rem 3rem;
+}
+
+.checkbox {
+  min-height: 1.2rem;
+}
+
+.trashBtn {
+  background: none;
+  border: none;
+  color: var(--danger);
+}
